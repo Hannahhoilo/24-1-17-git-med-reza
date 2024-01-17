@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tittel</title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">  
+		<link rel="stylesheet" href="css/fonts.css">
+	</head>
+
+	<body>
+		<div>
+			Hello
+			git is a distrobuted version control software
+
+			advantages using git:
+			-tracking and managing changes in the code 
+			-collabiration - 
+			-free and widely recognized (documentation, tutorial, netlify)
+			-safety and security (restoring and hashinf, distrobuted not centralize)
+
+			installing git 
+			git-scm.com
+
+			git basics
+			initializing a new local repository. 
+			have to be used when starting new project to track
+			-git init 
+			current state of the local repo. to see the status 
+			-git status
+			
+			TUTORIAL:
+
+			create file:
+			touch index.html
+
+			to staging area, ready to be committed:
+			git add index.html
+
+			create css:
+			touch style.css
+
+			putting all to staging
+			git add .
+
+			changes to be committed:
+  			(use "git rm --cached <file>..." to unstage)
+
+			to add to repository:
+				git commit
+
+
+			git commit -m 'create JS file'
+
+
+			for å se loggen:
+			git log
+			git log --oneline (for å få en kortere melding)
+
+
+			git branches: 
+
+			for å se brancher 
+			git branch 
+
+			create a seperate branch:
+			git branch add-feature  (add-feature er navnet)
+
+			for å navigere til annen branch:
+			git checkout add-feature (add feature er navnet)
+
+
+
+			for å slette en branch må du ut av branchen du vil slette og inn i main/master:
+			git branch -d add-feature
+
+			hvordan lage ny og gå rett til ny branch:
+			git checkout -b add-feature
+
+			for å komme tilbake til main, men nå er main branchen og sidebranchen separert
+			git checkout main
+
+			ls - ser på alle tingene i en branch
+
+			undoing changes:
+			3 different commands 
+			-checkout (for å gå tilbake i tid, kopier koden feks 8b1f310 (git checkout 8b1f310))
+			-revert (undo (git revert 8b1f310) )
+			-reset (erases everything in a branch)
+
+			når terminalen ikke vil la meg skrive mer, hold inne : + shift qw 
+
+			er to type måter å merge på. fast foreward merging
+			er det en komflikt på man velge en av de to hva som skl comittes  
+
+			for å skjekke at den er kobla til github feks 
+				git remote
+
+			koble med github repository, bruk remote. kopier link fra github
+			feks: git remote add origin https://github.com/Hannahhoilo/24-1-17-git-med-reza.git
+
+			
+
+
+
+
+
+
+
+
+		</div>
+
+		
+
+			<script src="js/script.js"></script>
+	</body>
+
+</html>
+
